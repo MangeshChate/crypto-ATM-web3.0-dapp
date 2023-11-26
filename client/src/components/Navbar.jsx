@@ -24,7 +24,7 @@ function Navbar() {
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li className="btn bg-blue-700 text-light ml-5 font-bold w-[150px] rounded-full">Login</li>
+          <Link to="/mainAtm" className="btn bg-blue-700 text-light ml-5 font-bold w-[150px] rounded-full">Connect Wallet</Link>
         </ul>
         <span className='block lg:hidden md:hidden'>
           <DragHandle className=' font-bold text-lg ' onClick={toggleMenu} />
