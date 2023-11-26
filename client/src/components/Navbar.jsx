@@ -19,7 +19,7 @@ function Navbar() {
             <h1 className='text-2xl hidden lg:block font-bold'>CryptoTM</h1>
           </span>
         </Link>
-        <a href='' className="btn rounded-2xl block lg:hidden i-glow font-monospace mr-5">click for mobile</a>
+        <a href='https://metamask.app.link/dapp/cryptotm.netlify.app/' className="btn rounded-2xl block lg:hidden i-glow font-monospace mr-5">click for mobile</a>
         <ul className='flex flex-center gap-5 items-center hidden lg:block lg:flex md:block mr-[100px]'>
           <li>Home</li>
           <li>About</li>
