@@ -13,10 +13,12 @@ function Navbar() {
       <div className="container flex justify-between   items-center p-5 ">
         <Link to="/" className='flex items-center align-center gap-2'>
           <span>
-            <img src="https://cdn-icons-png.flaticon.com/512/7513/7513034.png" alt="" className='w-16'/>
+            <img src="https://cdn-icons-png.flaticon.com/512/802/802338.png" alt="" className='w-16'/>
+           
           </span>
           <span>
             <h1 className='text-2xl hidden lg:block font-bold'>CryptoTM</h1>
+            <span className='text-sm'>powered by RabbitChat</span>
           </span>
         </Link>
         <a href='https://metamask.app.link/dapp/cryptotm.netlify.app/' className="btn rounded-2xl block lg:hidden i-glow font-monospace mr-5">click for mobile</a>

@@ -1,6 +1,7 @@
-import { AtmOutlined, Cancel } from '@mui/icons-material'
+import { AtmOutlined, Balance, Cancel, CurrencyExchange } from '@mui/icons-material'
 import React, { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
+import {} from "@mui/icons-material"
 function Atm({  contract ,account}) {
 
     const [modal1, setModal1] = useState(false);
@@ -140,11 +141,11 @@ function Atm({  contract ,account}) {
 
             {account ? (
                 
-            <div className='container bg-random-grad  bg-opacity-50 h-[75%] rounded-lg '>
+            <div className='container white-blur-glass  bg-opacity-50 h-[75%] rounded-lg '>
                 <div className="container p-3">
                     <div className='container-fluid flex justify-center lg:justify-between lg:items-center mt-5 lg:p-0 '>
                         <span className='hidden lg:block'>
-                            <img src="https://cdn-icons-png.flaticon.com/512/7513/7513034.png" className='w-[90px] ' alt="" />
+                            <img src="https://cdn-icons-png.flaticon.com/512/802/802338.png" className='w-[90px] ' alt="" />
                         </span>
                         <span className='text-sm lg:text-3xl font-mono overflow-hidden overflow-ellipsis max-w-full'>
                             {account}
@@ -154,7 +155,9 @@ function Atm({  contract ,account}) {
 
                     <div className="container-fluid mt-[50px] lg:mt-[100px] h-[300px] flex  flex-col align-center justify-center">
                         <div className="grid grid-cols-1 lg:grid-cols-2  gap-[30px] lg:gap-[50px] font-bold font-mono">
-                            <button className='text-lg lg:text-3xl i-glow blue-blur-glass text-white p-3 lg:p-10 rounded-full' onClick={() => setModal1(true)}>Check Balance</button>
+                            <button className='text-lg lg:text-3xl i-glow blue-blur-glass text-white p-3 lg:p-10 rounded-full' onClick={() => setModal1(true)}>Check Balance
+                            
+                            </button>
 
                             <button className='text-lg lg:text-3xl i-glow blue-blur-glass text-white p-3 lg:p-10 rounded-full' onClick={() => setmodal2(true)}>Deposit</button>
 
