@@ -38,16 +38,17 @@ contract Web3ATM {
     }
 
     function transfer(address to, uint256 amount) external {
-        require(to != address(0), "Invalid recipient address");
-        require(amount > 0 && amount <= balances[msg.sender], "Invalid transfer amount");
+    require(to != address(0), "Invalid recipient address");
+    require(amount > 0 && amount <= balances[msg.sender], "Invalid transfer amount");
 
-        balances[msg.sender] -= amount;
-        balances[to] += amount;
+    balances[msg.sender] -= amount;
+    payable(to).transfer(amount);
 
-        emit Transfer(msg.sender, to, amount);
-    }
+    emit Transfer(msg.sender, to, amount);
+}
+
 
    
 }
 
-// 0x9A464Af0fabD692F4A5E9493D59163d9f6b0aaD8
+// 0x4801C01AB41b7Ec0C437b8B95d133Ab82BA1d0d0

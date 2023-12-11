@@ -25,7 +25,7 @@ function MainPage() {
           console.log(address);
           setAccount(address);
 
-          const contractAddress = '0x9A464Af0fabD692F4A5E9493D59163d9f6b0aaD8';
+          const contractAddress = '0x4801C01AB41b7Ec0C437b8B95d133Ab82BA1d0d0';
           const abi = ABI;
 
           const contractInstance = new ethers.Contract(contractAddress, abi, signer);
