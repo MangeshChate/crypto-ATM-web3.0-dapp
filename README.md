@@ -66,7 +66,7 @@ While the current implementation of Web3ATM provides basic banking functionaliti
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/MangeshChate/crypto-ATM-web3.0-dapp.git)
    
    ```
 
