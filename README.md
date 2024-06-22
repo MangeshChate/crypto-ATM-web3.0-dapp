@@ -1,6 +1,6 @@
 
 
-# Web3ATM Smart Contract
+# Web3.0 CRYPTO ATM DAPP 
 
 ## Introduction
 
